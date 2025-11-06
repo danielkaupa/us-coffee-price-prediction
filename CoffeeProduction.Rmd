@@ -48,7 +48,8 @@ library(graphics)
 ```{r}
 # The following dataset was pulled from https://quickstats.nass.usda.gov/.
 
-data_raw <- read.csv(file='USDA_Data.csv', colClasses = c(Period ="factor"))
+# may need to schange the dash to \
+data_raw <- read.csv(file='data/USDA_Data.csv', colClasses = c(Period ="factor"))
 
 # If you look at the data, it was already filtered to the time period "Marketing Year" when pulled from the USDA website.
 # Although there are other time periods for which records are available, this was the time period that contained the most and the most consistent records.
